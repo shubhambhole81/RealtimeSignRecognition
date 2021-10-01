@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <style>
+    h1 {text-align: center;color: white;}
+    img {display: block;margin-left: auto;margin-right: auto;}
+    body {background-image: url("https://bit.ly/3CmfZz3");}
+    p.bottom {
+    color: #FFFFFF;}
+    a.bottom {
+    color: yellow;}
+
+   </style>
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+ </head>
+
+  <body>
+    <div class="container" align="center">
+        <div class="row" align="center">
+            <div class="col-lg-8  offset-lg-2 align="center"">
+                <h1 class="mt-5">Face Login</h1>
+                <img src="{{ url_for('verify_face') }}" width="40%"><br><br>
+                <a href="{{ url_for('welcome') }}" class="btn">Login</a><br>
+                <p class="bottom">Not Registered! Please Register First <a class="bottom" href="{{url_for('face_register')}}" class="btn"> Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+    </body>
+
+
+</html>

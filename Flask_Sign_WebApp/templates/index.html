@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <style>
+    h1 {text-align: center;color: white;}
+    h2 {text-align: center;color: yellow;}
+    img {
+       display: block;
+       margin-left: 372px;
+       margin-right: auto;
+        }
+    body {background-image: url("https://bit.ly/3DJO9ya");}
+    .btn {
+    padding: 10px 40px;
+    background-color: #236B8E;
+    color: #FFFFFF;
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 10px;
+    }
+   </style>
+ </head>
+
+  <body style="background-color:#33F1FF;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8  offset-lg-2">
+                <h1 class="mt-5">Real-Time Sign Detection and Recognition</h1>
+                <h2>Speak Up With Your Sign</h2>
+                <a href="{{ url_for('logout') }}" class="btn" style="float: right;"><font color="red">Logout</font></a><a href="{{ url_for('welcome') }}" class="btn" style="float: left;"><font color="red">Back</font></a>
+                <img src="{{ url_for('video_feed') }}" width="50%"><br><br>
+            </div>
+        </div>
+    </div>
+    </body>
+
+
+</html>

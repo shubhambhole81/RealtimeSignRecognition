@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <style>
+    h1 {text-align: center;color: white;}
+    body {background-image: url("https://bit.ly/3CmfZz3");}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+   </style>
+ </head>
+
+  <body>
+    <div class="container" align="center">
+        <div class="row" align="center">
+            <div class="col-lg-8  offset-lg-2" align="center">
+                <h1 class="mt-5">Register Your Face</h1><br><br><br><br><br>
+                <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+                   <div class="msg">{{ msg }}</div>
+                   <label for="labels"><font color="yellow"><b>Enter Your Name:-</b></font></label><br><br>
+                   <input type="text" placeholder="Enter Your name" name="labels" required><br><br>
+                   <label for="images"><font color="yellow"><b>Upload Your Image:-</b></font></label><br><br>
+                   <input type="file" id="images" name="images" style="color:yellow;" accept="image/*" required><br><br><br>
+                   <input type="submit" class="btn" value="Sign Up">
+                </form><br><br><br>
+                <p><font color="white">Already Registered! Please Login</font><a class="bottom" href="{{url_for('face_login')}}"><font color="yellow"> Login</font></a></p>
+            </div>
+        </div>
+    </div>
+    </body>
+
+
+</html>

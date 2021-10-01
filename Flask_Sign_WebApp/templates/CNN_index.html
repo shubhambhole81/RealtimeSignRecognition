@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <style>
+    h1 {text-align: center;color: white;}
+    h2 {text-align: center;color: yellow;}
+    body {background-image: url("https://bit.ly/3DJO9ya");}
+    .btn {
+    padding: 10px 40px;
+    background-color: #236B8E;
+    color: #FFFFFF;
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 10px;
+    }
+   </style>
+ </head>
+
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8  offset-lg-2">
+                <h1 class="mt-5">Sign Detection and Recognition Using Images</h1>
+                <h2>Speak Up With Your Sign</h2>
+                <h2>Upload Your Sign</h2>
+                <a href="{{ url_for('logout') }}" class="btn" style="float: right;"><font color="red">Logout</font></a>
+                <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data" align="center">
+                   <label for="images"><font color="white"><b>Upload Your Sign Image:-</b></font></label><br><br>
+                   <input type="file" id="images" name="images" style="color:white;" accept="image/*" required><br><br><br>
+                   <button class="btn btn-primary btn-lg " onclick="predict = 'predict';"><font color="red">Predict<font></button>
+            </div>
+        </div>
+    </div>
+    </body>
+
+
+</html>

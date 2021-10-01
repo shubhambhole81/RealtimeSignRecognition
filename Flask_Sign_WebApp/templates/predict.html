@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Prediction</title>
+      <style>
+         h1 {text-align: center;color: white;}
+         body {background-image: url("https://bit.ly/3DJO9ya");}
+         .btn {
+         padding: 10px 40px;
+         background-color: #236B8E;
+         color: #FFFFFF;
+         font-style: oblique;
+         font-weight: bold;
+         border-radius: 10px;
+         }
+      </style>
+  <head>
+  <body>
+    <div align="center">
+    <br><br><br><br><br>
+    <h1>Your Sign is</h1>
+    <h1>{{ prediction }}</h1><br><br>
+    <a href="{{ url_for('welcome') }}" class="btn"><font color="red">Back</font></a>
+    </div>
+  </body>
+</html>

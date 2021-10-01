@@ -1,0 +1,107 @@
+<html>
+ <head>
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: system-ui;
+}
+
+body {
+  background-color: #000;
+
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* background image with opacity */
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('https://cadence-ms.in/wp-content/uploads/2021/09/finalbg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-norepeat: no-repeat;
+  background-attachment: fixed;
+
+  z-index: -1;
+}
+
+.wrapper {
+  margin: 0 15px;
+  max-width: 960px;
+}
+
+h1 {
+  position: relative;
+  top: 0px;
+  animation: title 2s ease-in forwards;
+}
+
+@keyframes title {
+  0% {top: -100vh;}
+  100% {top: 0;}
+}
+
+.content {
+  margin: 25px 0 50px 0;
+  position: relative;
+  bottom: 0;
+  animation: content 2s ease-in forwards;
+}
+
+@keyframes content {
+  0% {bottom: -100vh;}
+  100% {bottom: 0;}
+}
+
+.btn {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all .3s linear;
+  animation: btn 1.5s ease-in 1.5s forwards;
+}
+
+@keyframes btn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+   </style>
+ </head>
+<body>
+<div class="wrapper">
+  <h1>RealTime Sign Detection and Recognition</h1>
+  <p class="content">
+The main aim of our project was the detection and recognition of sign language actions. We used the Google 
+Mediapipe library to collect the key points of our hands, which we captured using the Python OpenCV library 
+and stored them in an array. Using the key points,  we trained the model using the LSTM layers. 
+We also tested the model using the live feed of the camera. At last, We created a Web Application using 
+the Flask framework in which we created a user login system by database connectivity. </p>
+  <a href="{{ url_for('login') }}" class="btn">Get Started </a>
+</div>
+</body>
+</html>
