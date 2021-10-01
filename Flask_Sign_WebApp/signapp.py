@@ -39,8 +39,8 @@ actions = np.array(['A','B','C','D','E','F','G','H','I','J','K','L',
 model = keras.models.load_model(r'RealtimeSign.h5')
 model.load_weights(r'RealtimeSign.h5')
 
-cnn_model = keras.models.load_model(r'Sign_CNN.h5')
-cnn_model.load_weights(r'Sign_CNN.h5')
+cnn_model = keras.models.load_model(r'CNN_Model.h5')
+cnn_model.load_weights(r'CNN_Model.h5')
 
 
 labels = pd.read_csv("labels.csv").values
