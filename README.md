@@ -1,11 +1,9 @@
-# RealtimeSignRecognition
- Realtime Sign Language Detection and Recognition using Mediapipe
+# Realtime Sign Language Detection and Recognition
 
-It aims to detect and recognize sign language actions through
-the key points of hands. We captured the key points using Mediapipe
-Library and saved them in an array and trained the model on it.
-We deployed our project as a Web application using Flask.
+The project focuses on the fascinating task of detecting and recognizing sign language actions through the precise key points of hand movements. 
+Leveraging the powerful Mediapipe Library, we meticulously captured these key points, stored them in an array, and trained a sophisticated model on this data. 
+To make our work accessible and interactive, we deployed the project as a sleek web application using Flask.
 
 Technologies- Python, OpenCV, Mediapipe, Tensorflow, Flask.
 
-This project was done in Group as a Project Evaluation for CDAC e-DAI Course.
+This project was done in Group as a Project Evaluation for the CDAC e-DAI Course.
